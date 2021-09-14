@@ -101,6 +101,7 @@ const MainPage = observer(()=>{
             <Page 
             top={
                 <div className="TopPhotoDiv">
+                    <p>{process.env.SERVER_IP}</p>
                     <br/><br/><br/><br/>
                     <h1>Купите квартиру в новостройке в Саратове</h1>
                     <br/><br/><br/><br/>
