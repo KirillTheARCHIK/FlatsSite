@@ -1,6 +1,5 @@
 import axios from 'axios'
-import serverUrl from '../env.js'
 
 export const $host=axios.create({
-    baseURL: serverUrl
+    baseURL: process.env.SERVER_IP+":"+process.env.SERVER_PORT
 })
