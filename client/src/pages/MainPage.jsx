@@ -91,17 +91,17 @@ class Advantages extends React.Component
     }
 }
 const MainPage = observer(()=>{
-    const {complexMas}=useContext(Context)
+    const {siteMas}=useContext(Context)
 
     useEffect(()=>{
-        fetchHouses().then(data=>complexMas.setHouses(data))
+        fetchHouses().then(data=>siteMas.setHouses(data))
     },[])
 
         return (
             <Page 
             top={
                 <div className="TopPhotoDiv">
-                    <p>{process.env.SERVER_IP}</p>
+                    <p>prenv</p>
                     <br/><br/><br/><br/>
                     <h1>Купите квартиру в новостройке в Саратове</h1>
                     <br/><br/><br/><br/>
@@ -111,7 +111,7 @@ const MainPage = observer(()=>{
                 <div>
                     <Info/>
                     <Advantages/>
-                    <Examples/>
+                    <Examples n={process.env}/>
                     <div className="Footer">
 
                     </div>

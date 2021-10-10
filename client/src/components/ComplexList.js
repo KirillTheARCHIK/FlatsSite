@@ -5,12 +5,12 @@ import HouseBlock from './HouseBlock'
 import ComplexBlock from './ComplexBlock'
 
 const ComplexList = observer(()=>{
-    const {complexMas} = useContext(Context)
+    const {siteMas} = useContext(Context)
     const ComplexElements=[];
 
-    {complexMas._complexes.map(complex=>{
+    {siteMas._complexes.map(complex=>{
         let houses=[];
-        {complexMas._houses.map(house=>{
+        {siteMas._houses.map(house=>{
             if(house.complexId==complex.id)
             {
                 houses.push(house)

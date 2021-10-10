@@ -30,7 +30,10 @@ class HouseController{
         return res.json(houses)
     }
     async getOne(req, res) {
-        
+        const {houseId}=req.body
+        let house
+        house=await House.findOne({where: {houseId}})
+        return res.json(house)
     }
 }
 

@@ -1,6 +1,6 @@
 import {makeAutoObservable} from 'mobx'
 
-export default class ComplexStore{
+export default class SiteStore{
     constructor(){
         this._complexes=[]
         this._houses=[

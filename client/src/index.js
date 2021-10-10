@@ -2,14 +2,14 @@ import React, { createContext } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import ComplexStore from './store/ComplexStore';
-//import reportWebVitals from './reportWebVitals';
+import SiteStore from './store/SiteStore';
+require('dotenv').config()
 
 export const Context=createContext(null)
 
 ReactDOM.render(
   <Context.Provider value={{
-    complexMas: new ComplexStore()
+    siteMas: new SiteStore()
   }}>
     <App />
   </Context.Provider>,

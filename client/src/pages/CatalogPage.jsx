@@ -7,11 +7,11 @@ import { fetchComplexes, fetchHouses } from '../http/complexAPI'
 import ComplexList from '../components/ComplexList'
 
 const CatalogPage = observer(()=>{
-    const {complexMas}=useContext(Context)
+    const {siteMas}=useContext(Context)
 
     useEffect(()=>{
-        fetchHouses().then(data=>complexMas.setHouses(data))
-        fetchComplexes().then(data=>complexMas.setComplexes(data))
+        fetchHouses().then(data=>siteMas.setHouses(data))
+        fetchComplexes().then(data=>siteMas.setComplexes(data))
     },[])
 
     return (

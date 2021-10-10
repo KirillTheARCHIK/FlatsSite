@@ -4,6 +4,7 @@ import AppRouter from './components/AppRouter'
 require('dotenv').config()
 
 const App = () =>{
+    console.log(process.env)
     return(
         <BrowserRouter>
             <AppRouter/>
