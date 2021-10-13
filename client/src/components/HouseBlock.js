@@ -8,7 +8,7 @@ const HouseBlock=({house})=>{
     return(
         <div className="HouseBlock">
             <img src={serverUrl+house.image} height="200" width="310"/>
-            <h1 onClick={() => history.push('Houses/' + house.id)}>{house.name}</h1>
+            <h1 onClick={() => history.push('Houses/' + house.id)} style={{width: 150, cursor: 'pointer'}}>{house.name}</h1>
             <p>Квартиры от {house.startPrice} млн. рублей</p>
         </div>
     )
